@@ -39,11 +39,6 @@ define Package/vwifi/conffiles
 /etc/init.d/vwifi-client
 endef
 
-# Patch for struct msghdr
-define Build/Prepare
-	$(call Build/Prepare/Default)
-endef
-
 CMAKE_OPTIONS += \
 	-DCMAKE_BUILD_TYPE=Release \
 	-DCMAKE_CXX_COMPILER=$(TARGET_CXX) \
