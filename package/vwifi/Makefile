@@ -24,7 +24,7 @@ define Package/vwifi
   CATEGORY:=Network
   TITLE:=Virtual WiFi client for wireless device simulation
   URL:=https://github.com/Raizo62/vwifi
-  DEPENDS:=+libnl +libstdcpp +kmod-mac80211-hwsim +libpthread
+  DEPENDS:=+libnl +libstdcpp +libpthread
   PKGFLAGS:=nonshared
 endef
 
